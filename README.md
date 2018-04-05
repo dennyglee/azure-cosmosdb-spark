@@ -11,6 +11,7 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
+&nbsp;
 
 <strong><em>Table of Contents</em></strong>
 
@@ -30,6 +31,7 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 * [Contributing & Feedback](#contributing--feedback)
 
 
+&nbsp;
 
 ## Latest 
 * Lambda Architecture Re-architected - Speed Layer ([Databricks notebook HTML view](https://htmlpreview.github.io/?https://github.com/dennyglee/azure-cosmosdb-spark/blob/master/samples/lambda/databricks/Lambda%20Architecture%20Re-architected%20-%20Speed%20Layer.html))
@@ -44,6 +46,9 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 | ------ | ----------- |
 | [User Guide](./docs/user-guide.md) | An end-to-end `azure-cosmosdb-spark` user guide  |
 | [Configuration Reference Guide](./docs/configuration-reference-guide.md) | Reference guide of the various read, change feed, write, and bulk API write parameters |
+
+
+&nbsp;
 
 
 ## Jump Start
