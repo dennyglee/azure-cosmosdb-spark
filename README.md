@@ -11,7 +11,6 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
-&nbsp;
 
 <strong><em>Table of Contents</em></strong>
 
@@ -31,14 +30,12 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 * [Contributing & Feedback](#contributing--feedback)
 
 
-&nbsp;
 
 ## Latest 
 * Lambda Architecture Re-architected - Speed Layer ([Databricks notebook HTML view](https://htmlpreview.github.io/?https://github.com/dennyglee/azure-cosmosdb-spark/blob/master/samples/lambda/databricks/Lambda%20Architecture%20Re-architected%20-%20Speed%20Layer.html))
 * Lambda Architecture Re-architectured ([Documentation and Samples](https://github.com/dennyglee/azure-cosmosdb-spark/tree/master/samples/lambda))
 * Using the Bulk API with the connector ([Guidance](#))
 
-&nbsp;
 
 ## Guides
 
@@ -46,9 +43,6 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 | ------ | ----------- |
 | [User Guide](./docs/user-guide.md) | An end-to-end `azure-cosmosdb-spark` user guide  |
 | [Configuration Reference Guide](./docs/configuration-reference-guide.md) | Reference guide of the various read, change feed, write, and bulk API write parameters |
-
-
-&nbsp;
 
 
 ## Jump Start
@@ -145,12 +139,8 @@ flights.write.mode(SaveMode.Overwrite).cosmosDB(writeConfig)
 </p>
 </details>
 
-&nbsp;
-
 See other sample [Jupyter](https://github.com/dennyglee/azure-cosmosdb-spark/tree/master/samples/notebooks) and [Databricks]() notebooks as well as [PySpark]() and [Spark]() scripts.
 
-
-&nbsp;
 
 ## Requirements
 
@@ -165,8 +155,6 @@ See other sample [Jupyter](https://github.com/dennyglee/azure-cosmosdb-spark/tre
 | Python | 2.7, 3.6 |
 | Azure Cosmos DB Java SDK | 1.16.1, 1.16.2 |
 
-
-&nbsp;
 
 ## Working with the connector
 You can build and/or use the maven coordinates to work with `azure-cosmosdb-spark`.
@@ -223,7 +211,6 @@ Currently, this connector project uses `maven` so to build without dependencies,
 mvn clean package
 ```
 
-&nbsp;
 
 ## Working with our samples
 
@@ -235,7 +222,6 @@ Included in this GitHub repository are a number of sample notebooks and scripts 
 * **[Connecting Azure Databricks to Azure Cosmos DB](https://docs.databricks.com/spark/latest/data-sources/azure/cosmosdb-connector.html)** using `azure-cosmosdb-spark`.  Linked here is also an Azure Databricks version of the [On-Time Flight Performance notebook](https://github.com/dennyglee/databricks/tree/master/notebooks/Users/denny%40databricks.com/azure-databricks). 
 * **[Lambda Architecture with Azure Cosmos DB and HDInsight (Apache Spark)](https://github.com/Azure/azure-cosmosdb-spark/blob/master/samples/lambda/readme.md)**: Combining the Azure Cosmos DB, , and HDInsight not only allows you to accelerate real-time big data analytics, but also allows you to benefit from a Lambda Architecture while simplifying its operations.
 
-&nbsp;
 
 ## More Information
 
@@ -262,7 +248,6 @@ Change Feed
 * [Change Feed Demos](https://github.com/Azure/azure-cosmosdb-spark/wiki/Change-Feed-demos)
 * [Structured Stream Demos](https://github.com/Azure/azure-cosmosdb-spark/wiki/Structured-Stream-demos)
 
-&nbsp;
 
 ## Contributing & Feedback
 
