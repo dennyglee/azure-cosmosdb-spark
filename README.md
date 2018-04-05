@@ -7,13 +7,12 @@
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
 
-<details>
-<summary><strong><em>Table of Contents</em></strong></summary>
+<strong><em>Table of Contents</em></strong>
 
 * [Latest](#latest)
 * [Jump Start](#jump-start)
-  * [Reading from Cosmos DB](#reading-from-Cosmos-DB)
-  * [Writing to Cosmos DB](#writing-to-Cosmos-DB)
+  * [Reading from Cosmos DB](#reading-from-cosmos-DB)
+  * [Writing to Cosmos DB](#writing-to-cosmos-DB)
 * [Requirements](#requirements)
 * [Working with the connector](#working-with-the-connector)
   * [Using spark-cli](#using-spark-cli)
@@ -21,10 +20,10 @@
   * [Using Databricks notebooks](#using-databricks-notebooks)
   * [Build the connector](#build-the-connector)
 * [Working with our samples](#working-with-our-samples)
-* [More Inforamtion](#more-information)
+* [More Information](#more-information)
 * [Contributing & Feedback](#contributing--feedback)
 
-</details>
+
 
 ## Latest 
 * Lambda Architecture Re-architected - Speed Layer ([Databricks notebook HTML view](https://htmlpreview.github.io/?https://github.com/dennyglee/azure-cosmosdb-spark/blob/master/samples/lambda/databricks/Lambda%20Architecture%20Re-architected%20-%20Speed%20Layer.html))

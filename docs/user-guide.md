@@ -10,17 +10,17 @@ Current Version of Spark Connector: 1.1.0 | [![Build Status](https://travis-ci.o
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
 
-<details>
-<summary><strong><em>Table of Contents</em></strong></summary>
+<!-- <details>
+<summary><strong><em>Table of Contents</em></strong></summary> -->
 
-* [Introduction](#Introduction)
-* [Requirements](#Requirements)
+* [Introduction](#introduction)
+* [Requirements](#requirements)
 * [Working with the connector](#working-with-the-connector)
   * [Using spark-cli](#using-spark-cli)
   * [Using Jupyter notebooks](#using-jupyter-notebooks)
   * [Using Databricks notebooks](#using-databricks-notebooks)
   * [Build the connector](#build-the-connector)
-* [Reading from Cosmos dB](#Reading-from-Cosmos-DB)
+* [Reading from Cosmos dB](#reading-from-cosmos-db)
   * Python
     * Show adding to map
     * Reading Batch
@@ -30,25 +30,25 @@ Current Version of Spark Connector: 1.1.0 | [![Build Status](https://travis-ci.o
     * Reading Change Feed
   * Predicate pushdown
   * To cache or not to cache, that is the question
-* [Writing to Cosmos DB](#Writing-to-Cosmos-DB)
+* [Writing to Cosmos DB](#writing-to-cosmos-db)
   * Python
     * Show adding to map
   * Scala
     * Show adding to map
   * Examples
-* [Structured Streaming](#Structured-Streaming)
+* [Structured Streaming](#structured-streaming)
   * TTL
   * Reading Change Feed
     * Python
     * Scala
-* [Lambda Architecture](#Lambda-Architecture)
+* [Lambda Architecture](#lambda-architecture)
   * Point to Lambda Architecture
-* [Configuration Reference](#Configuration-Reference)
+* [Configuration Reference](#configuration-reference)
     * Parmeters
     * Reading
     * Writing
 
-</details>
+<!-- </details> -->
 
 
 ## Introduction
@@ -57,7 +57,7 @@ Current Version of Spark Connector: 1.1.0 | [![Build Status](https://travis-ci.o
 
 The connector utilizes the [Azure Cosmos DB Java SDK](https://github.com/Azure/azure-documentdb-java) via following data flow:
 
-![](https://github.com/Azure/azure-documentdb-spark/blob/master/docs/images/Azure-DocumentDB-Spark_Connector.png)
+![](https://github.com/Azure/azure-cosmosdb-spark/blob/master/docs/images/diagrams/azure-cosmosdb-spark-flow_600x266.png?raw=true)
 
 The data flow is as follows:
 
@@ -69,6 +69,7 @@ The data flow is as follows:
 The important call out is that communication between Spark and Cosmos DB is significantly faster because the data movement is between the Spark worker nodes and the Cosmos DB data nodes (partitions).
 
 
+[<em>Back to the top</em>](#user-guide)
 
 
 ### Building the Azure Cosmos DB Spark Connector
