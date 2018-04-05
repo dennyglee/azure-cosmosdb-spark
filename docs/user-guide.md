@@ -149,7 +149,7 @@ Below are code snippets in `Python` and `Scala` on how to create a Spark DataFra
 
 * The connector parses the `WHERE` clause for predicate pushdown to utilize the Cosmos DB indexes.  For more information on Cosmos DB indexes, please refer to [How does Azure Cosmos DB index data?](https://docs.microsoft.com/en-us/azure/cosmos-db/indexing-policies)
 * If you supply a `query_custom` parameter, this will override the pushdown predicate and use the `query_custom` instead.
-* For more information on the various configuration parameters, please refer to [Configuration Reference Guide](./docs/configuration-reference-guide.md)
+* For more information on the various configuration parameters, please refer to [Configuration Reference Guide](./configuration-reference-guide.md)
 * Please refer to [TODO: Best Practices]() for reading best practices 
 
 As well, it is important to note that Azure Cosmos DB, you can read from **batch** or from the Azure Cosmos DB **change feed** (more info at [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed)) if you want to read and store your events in *real time*.

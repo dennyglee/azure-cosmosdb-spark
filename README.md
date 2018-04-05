@@ -4,12 +4,18 @@
 [![Build Status](https://travis-ci.org/Azure/azure-cosmosdb-spark.svg?branch=master)](https://travis-ci.org/Azure/azure-cosmosdb-spark)
 
 
+***
+Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/configuration-reference-guide.md)
+***
+
+
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
 
 <strong><em>Table of Contents</em></strong>
 
 * [Latest](#latest)
+* [Guides](#guides)
 * [Jump Start](#jump-start)
   * [Reading from Cosmos DB](#reading-from-cosmos-db)
   * [Writing to Cosmos DB](#writing-to-cosmos-db)
@@ -31,6 +37,14 @@
 * Using the Bulk API with the connector ([Guidance](#))
 
 &nbsp;
+
+## Guides
+
+| Guides | Description | 
+| ------ | ----------- |
+| [User Guide](./docs/user-guide.md) | An end-to-end `azure-cosmosdb-spark` user guide  |
+| [Configuration Reference Guide](./docs/configuration-reference-guide.md) | Reference guide of the various read, change feed, write, and bulk API write parameters |
+
 
 ## Jump Start
 
