@@ -11,8 +11,8 @@
 
 * [Latest](#latest)
 * [Jump Start](#jump-start)
-  * [Reading from Cosmos DB](#reading-from-cosmos-DB)
-  * [Writing to Cosmos DB](#writing-to-cosmos-DB)
+  * [Reading from Cosmos DB](#reading-from-cosmos-db)
+  * [Writing to Cosmos DB](#writing-to-cosmos-db)
 * [Requirements](#requirements)
 * [Working with the connector](#working-with-the-connector)
   * [Using spark-cli](#using-spark-cli)
