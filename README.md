@@ -12,7 +12,8 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 `azure-cosmosdb-spark` is the official connector for [Azure CosmosDB](http://cosmosdb.com) and [Apache Spark](http://spark.apache.org). The connector allows you to easily read to and write from Azure Cosmos DB via Apache Spark DataFrames in `python` and `scala`.  It also allows you to easily create a lambda architecture for batch-processing, stream-processing, and a serving layer while being globally replicated and minimizing the latency involved in working with big data. 
 
 
-<strong><em>Table of Contents</em></strong>
+<details>
+<summary><strong><em>Table of Contents</em></strong></summary>
 
 * [Latest](#latest)
 * [Guides](#guides)
@@ -29,6 +30,7 @@ Guides: [User Guide](./docs/user-guide.md) | [Configuration Reference](./docs/co
 * [More Information](#more-information)
 * [Contributing & Feedback](#contributing--feedback)
 
+</details>
 
 
 ## Latest 

@@ -142,6 +142,7 @@ mvn clean package
 
 [<em>Back to the top</em>](#user-guide)
 
+&nbsp;
 
 
 ## Reading from Cosmos DB
@@ -207,6 +208,10 @@ val flights = spark.read.cosmosDB(readConfig)
 flights.count()
 ```
 
+TODO: 
+- Need to add results and point to aggregations examples
+- Need to point to sample notebooks for this.
+
 
 
 ### Reading Change Feed
@@ -245,11 +250,25 @@ val readConfig = Config(Map(
   "query_custom" -> "SELECT c.id, c.created_at, c.user.screen_name,  c.user.lang, c.user.location, c.text, c.retweet_count, c.entities.hashtags, c.entities.user_mentions, c.favorited, c.source FROM c" 
 ))
 
+// Start reading change feed as a stream
+var streamData = spark.readStream.format(classOf[CosmosDBSourceProvider].getName).options(sourceConfigMap).load()
+
+// Start streaming query to memory
+val query = streamData.groupBy("lang").count().sort($"count".desc).writeStream.outputMode("complete").format("memory").queryName("counts").start()
 ```
+
+
+TODO: 
+- Need to add Databricks notebook screenshots to showcase this in action
+- Need to add notebook examples here
+
+
 
 
 
 [<em>Back to the top</em>](#user-guide)
+
+&nbsp;
 
 
 ### Writing to Cosmos DB
